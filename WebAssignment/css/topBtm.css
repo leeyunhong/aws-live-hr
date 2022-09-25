@@ -1,0 +1,301 @@
+*,
+input[type] {
+  font-family: 'League Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/*Navigation*/
+.top-cont {
+  height: 85px;
+  width: 100%;
+}
+
+/*Style for HEADER*/
+header {
+  /*Style for Navigation*/
+}
+
+header .scrolling-active {
+  background-color: #5e19e7;
+  -webkit-box-shadow: 0px 0px 2px .5px;
+          box-shadow: 0px 0px 2px .5px;
+}
+
+header .scrolling-active .menu ul li a {
+  color: #ffffff;
+}
+
+header .scrolling-active .login-reg a,
+header .scrolling-active .login-reg input {
+  border: 1px #ffffff solid;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 0px;
+  border-top: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #ffffff;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  /*Style for Navigation - Image Container*/
+  /*Style for Navigation - Middle Container*/
+  /*Style for Navigation - Login Register*/
+}
+
+header nav .img-cont {
+  width: 250px;
+  height: 90px;
+  padding: 8px;
+}
+
+header nav .img-cont img {
+  width: 100%;
+  height: 100%;
+}
+
+header nav .menu {
+  width: 40%;
+}
+
+header nav .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav .menu ul li {
+  list-style: none;
+}
+
+header nav .menu ul li a {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #5e19e7;
+}
+
+header nav .menu ul li a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  margin: 1px auto;
+  background-color: #ff4500;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+header nav .menu ul li a:hover:after {
+  width: 60%;
+}
+
+header nav .login-reg {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header nav .login-reg a {
+  margin-right: 20px;
+}
+
+header nav .login-reg a,
+header nav .login-reg input {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px #5e19e7 solid;
+  background-color: #5e19e7;
+  color: #ffffff;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+header nav .login-reg :is(a, input):hover {
+  background-color: #ffffff;
+  color: #5e19e7;
+}
+
+/*Style for Footer*/
+footer {
+  margin-top: 250px;
+  height: 480px;
+  width: 100%;
+  padding: 50px 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100%;
+  -ms-grid-columns: 25% 35% auto;
+      grid-template: 100% / 25% 35% auto;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  background-color: #e4e4e4;
+  /*Style for Footer - Navigation*/
+  /*Style for Footer - Social Media*/
+  /*Style for Footer - Contact Form*/
+}
+
+footer h1 {
+  color: #ff4500;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+footer h1:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 40%;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-color: #5e19e7;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2) {
+  border-right: 3px solid #600aff;
+}
+
+footer .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-nav ul li {
+  list-style: none;
+}
+
+footer .footer-nav ul li a {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #5e19e7;
+}
+
+footer .footer-nav ul li a:hover {
+  color: #7e15f7;
+}
+
+footer .social-media ul li {
+  list-style-type: none;
+}
+
+footer .social-media ul li .fa {
+  padding: 30px 20px 10px 10px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+footer .social-media ul span {
+  font-size: 1.4em;
+}
+
+footer .social-media .fa-facebook {
+  color: #0e59fc;
+}
+
+footer .social-media .fa-twitter {
+  color: #2b52ff;
+}
+
+footer .social-media .fa-instagram {
+  color: #ff0f87;
+}
+
+footer .contact-form form {
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .contact-form input:not([type="submit"]), footer .contact-form textarea {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2em;
+  outline: none;
+}
+
+footer .contact-form input[type="submit"] {
+  margin-top: 10px;
+  max-width: 100px;
+  padding: 10px;
+  background-color: #5e19e7;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+footer .contact-form input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #5e19e7;
+  border: 1px solid #5e19e7;
+}
+
+footer .contact-form textarea {
+  padding: 10px;
+  resize: none;
+}
+
+footer .contact-form input {
+  min-height: 30px;
+  padding: 5px 7px;
+}
+/*# sourceMappingURL=topBtm.css.map */

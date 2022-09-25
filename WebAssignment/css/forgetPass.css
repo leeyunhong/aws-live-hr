@@ -1,0 +1,283 @@
+*,
+input[type] {
+  font-family: 'League Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Style for Forget Password*/
+.forgetPass-Container {
+  height: 100vh;
+  width: 100%;
+  background-color: #e9e9e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15%;
+}
+
+.forgetPass-Container a {
+  position: absolute;
+  top: 20px;
+  left: 45%;
+  text-decoration: none;
+  font-size: 32px;
+  color: #5e19e7;
+  font-weight: 600;
+}
+
+.forgetPass-Container a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  margin: 1px auto;
+  background-color: #ff4500;
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+.forgetPass-Container a:hover:after {
+  width: 60%;
+}
+
+.forgetPass-Container .outer-box {
+  background-color: #ffffff;
+  height: 540px;
+  width: 100%;
+  border-radius: 8px;
+  display: -ms-grid;
+  display: grid;
+  grid-template: "img form" 100% / 50% 50%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-img {
+  grid-area: img;
+  background: white url("../img/forgot_password-removebg.png") no-repeat center;
+  background-size: 80%;
+  border-radius: 8px 0px 0px 8px;
+  position: relative;
+}
+
+.forgetPass-Container .outer-box .forgetPass-img .img-cont {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  right: 10px;
+  top: 10px;
+}
+
+.forgetPass-Container .outer-box .forgetPass-img .img-cont h1 {
+  font-size: 48px;
+  color: #5e19e7;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ff4500;
+          text-decoration-color: #ff4500;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content {
+  grid-area: form;
+  background-color: #5e19e7;
+  border-radius: 0px 8px 8px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .tooltip img {
+  width: 8%;
+  height: 8%;
+  position: absolute;
+  right: 15%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .right1 img {
+  top: 32%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .right2 img {
+  top: 45%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .tooltip .right {
+  min-width: 200px;
+  margin-left: 20px;
+  left: 84%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  padding: 10px 20px;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #ff4500;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .right1 .right {
+  top: 36%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .right2 .right {
+  top: 49%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .tooltip:hover .right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .tooltip .right i {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .tooltip .right i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(50%, -50%) rotate(-45deg);
+          transform: translate(50%, -50%) rotate(-45deg);
+  background-color: #FFFFFF;
+  border: 1px solid #ff4500;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.forgetPass-Container .outer-box .forgetPass-content h1 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .user-img {
+  width: 30%;
+  height: 30%;
+  margin-bottom: 10px;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content form .error {
+  color: red;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content .error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input:not([type="submit"]) {
+  margin-top: 10px;
+  max-width: 100%;
+  min-width: 250px;
+  min-height: 40px;
+  padding: 5px 7px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.2em;
+  outline: none;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input:not([type="submit"])::-webkit-input-placeholder {
+  color: #161616;
+  opacity: .6;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input:not([type="submit"]):-ms-input-placeholder {
+  color: #161616;
+  opacity: .6;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input:not([type="submit"])::-ms-input-placeholder {
+  color: #161616;
+  opacity: .6;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input:not([type="submit"])::placeholder {
+  color: #161616;
+  opacity: .6;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input[type="submit"] {
+  margin-top: 20px;
+  max-width: 300px;
+  padding: 10px 1.5em;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: #5e19e7;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.forgetPass-Container .outer-box .forgetPass-content input[type="submit"]:hover {
+  background-color: #ff6027;
+  color: #ffffff;
+}
+/*# sourceMappingURL=forgetPass.css.map */
