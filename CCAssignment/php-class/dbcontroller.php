@@ -7,7 +7,7 @@ class DBController
 	private $database = "leeyunhong_database";
 	private $conn = "";
 
-	# composer dependencies 
+	/*# composer dependencies 
 	require 'vendor/autoload.php';
 	use Aws\S3\S3Client;  
 	use Aws\Exception\AwsException;
@@ -33,7 +33,7 @@ class DBController
 	'version' => $config['s3-access']['version'], 
 	'region' => $config['s3-access']['region'] 
 	]); 
-
+*/
 	function __construct()
 	{
 		$this->conn = $this->connectDB();
