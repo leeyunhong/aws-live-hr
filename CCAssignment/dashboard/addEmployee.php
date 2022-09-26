@@ -291,7 +291,7 @@ $employeeID = $employee->generateID();
                         <div class="btnBar">
                             <div class="profile-img">
                                 <label>Profile Picture</label>
-                                <input type="file" name="image" accept="image/*" required>
+                                <input type="file" name="image" accept="image/*">
                             </div>
                             <div class="btn">
                                 <input type="submit" value="Add" name="addEmp" class="submit-btn" id="submit">
