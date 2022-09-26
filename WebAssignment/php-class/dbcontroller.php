@@ -14,8 +14,8 @@ class DBController
 
 	$config = [ 
 	's3-access' => [ 
-		'key' => 'ASIATJFO5JO5BQVSHC7K', 
-		'secret' => '/zwc10oTiZ4Z0BJGDMjG6vDQTXCIwXNLsNR6Xlu7', 
+		'key' => 'ASIATJFO5JO5DOR66CNN', 
+		'secret' => 'DRlxwL92aAF6rEZgs32o53b9N44pQpGcJttUdnmj', 
 		'bucket' => 'leeyunhong-bucket', 
 		'region' => 'us-east-1', 
 		'version' => 'latest', 
